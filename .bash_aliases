@@ -1,0 +1,16 @@
+alias update='sudo apt-get update && sudo apt-get upgrade'
+alias cfgvim='nvim ~/.config/nvim/init.vim'
+alias cfgaliases='nvim ~/.bash_aliases'
+alias cfgautostart='nvim ~/.dwm/autostart.sh'
+alias cfgshortcuts="nvim ~/.config/sxhkd/sxhkdrc"
+alias cfgdwm="pushd . && cd ~/suckless/dwm && nvim config.def.h && rm config.h && sudo make clean install && popd"
+alias ls='ls --group-directories-first --color'
+alias la='ls -a'
+alias matrix='cmatrix -ab'
+alias sproc='ps -e | grep'
+alias spedit='nvim index.html scripts/main.js scripts/systems.js scripts/components.js scripts/entity.js scripts/input.js scripts/vector.js'
+alias getgt="gpg -d ~/Documents/coding/gitToken.gpg | xclip -selection 'clipboard'"
+alias clrclip="echo '' | xclip -selection 'clipboard'"
+alias cpdir="pwd | xclip -selection 'clipboard'"
+alias lc="wc -l"
+#alias vim="nvim"
