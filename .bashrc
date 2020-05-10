@@ -119,6 +119,11 @@ PERL_LOCAL_LIB_ROOT="/home/pi/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT
 PERL_MB_OPT="--install_base \"/home/pi/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/home/pi/perl5"; export PERL_MM_OPT;
 
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+LS_COLORS='di=01;92:ex=01;96'
+export LS_COLORS
 
+export PS1="\[\e[1;91m\]\u@\h:\[\e[1;96m\]\w $ \[\e[0m\]"
+
+export EDITOR=vim
+
+neofetch

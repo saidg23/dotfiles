@@ -6,3 +6,22 @@ super + e
 
 super + s
     power
+
+super + n
+    nemo
+
+super + y
+    youtubeview
+
+super + f
+    flameshot gui
+
+XF86AudioRaiseVolume
+    amixer set PCM 1dB+
+
+XF86AudioLowerVolume
+    amixer set PCM 1dB-
+
+XF86AudioMute
+    MUTE=$( amixer get PCM | grep -c "\[off\]" ); if [ $MUTE -eq 1 ]; then amixer set PCM unmute; else amixer set PCM mute; fi
+
